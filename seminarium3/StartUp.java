@@ -1,6 +1,6 @@
 class StartUp
 {
-	public  void main (String[] args)
+	public static void main (String[] args)
 	{
 		//Classen l = new Classen(s,f);
 		int programKlar=0;
@@ -51,16 +51,30 @@ class StartUp
 			*/
 			if(programKlar==2)
 			{
+				TestKlass a=new TestKlass();
 
-				beforeAllTest();
+				a.beforeAllTest();
+
+				a.testAvSaleInfoNamn();
+				a.testAvSaleInfoAmount(3);
+				a.testAvSaleInfoAmount(7);
+				a.testAvSaleInfoAmount(-5);
+				a.testAvSaleInfoValue();
+				a.testAvExternaIdetifierareBanan();
+				a.testAvExternaIdetifierareMorot();
+				a.testAvExternaIdetifierareAtomBomb();
+				a.testAvExternaIdetifierareEjKorrekt();
+
+				a.testAvReciept();
+				a.testAvSale();
+
+				a.afterAllTest();
 
 			}
 			//här kod klar
 		}
 	}
-	public void beforeAllTest()
-					{
-				}
+
 }
 
 
